@@ -1,0 +1,114 @@
+learn package
+local and global
+package.json
+npm
+setup react in system
+
+/***************
+    Open Source
+****************/
+=> Any body can contribute to development
+=> npm (node package manager)
+=> https://www.npmjs.com/
+
+/***************
+    JSON
+****************/
+Json=> Javascript Object Notation(format of data)
+[
+    {
+        "name":"john",
+        "class":"UI"
+    },
+    {
+        "name":"bill",
+        "class":"react"
+    }
+]
+node -v
+
+/***************
+    Package.json
+****************/
+=> First File of the application
+Go to folder with cmd/terminal
+Step1
+    => npm init
+Step2
+    => Answer questions
+    {
+        "name": "learnpackage",
+        "version": "1.0.0",
+        "description": "this is about packages",
+        "main": "index.js",
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "keywords": [
+            "react",
+            "redux"
+        ],
+        "author": "nareshit",
+        "license": "ISC"
+    }
+Step3
+    => Type yes
+    => Press enter
+
+/***************
+   local
+****************/
+Local to folder
+Step to package
+=> npm install <package name> --save
+=> npm install zone.js --save
+=> By Default Always latest version
+=> npm i react@15.0.1
+~ install minor updated version(16.8) (16.9)
+^ install major version(16.8)(17.0)
+=> they are directly connected with application
+
+/***************
+    Global
+****************/
+Global to the system
+=> To generate
+=> development
+=> run
+=> test
+
+Window
+=> Run your cmd as admin
+    =>npm install -g <package name>
+    =>npm install -g @aakashdeveloper/create-node-app
+
+Mac/linux
+=> Must use sudo befor command
+    => sudo npm install -g <package name>
+    => sudo npm install -g @aakashdeveloper/create-node-app
+
+/***************
+    Setup react in System
+****************/
+Step1>
+    Window
+    => Run your cmd as admin
+        =>npm install -g create-react-app
+
+    Mac/linux
+    => Must use sudo befor command
+        => sudo npm install -g create-react-app
+
+Step2>
+    GO inside folder where you want app
+    cd Desktop/folder/classes/July_react_evng
+
+Step3>
+    create-react-app <appname>
+    create-react-app firstapp
+
+Step4>
+    cd firstapp
+
+Step5>
+    npm start
