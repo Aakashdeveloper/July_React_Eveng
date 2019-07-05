@@ -112,3 +112,33 @@ Step4>
 
 Step5>
     npm start
+
+
+/*********************************
+   Commands in Package.json
+**********************************/
+Default command => npm start
+Other Command => npm run <command>
+
+
+/*********************************
+  Type Of Component
+**********************************/
+Functional Component        ||       Class Base Component
+Light in Weigth                         They are heavy as compare to Functional
+Display Component                       Logical Component
+cannot handle state                     can handle state
+
+//version
+Ecma Script
+=> Es5
+function add(a,b){
+    return a+b
+}
+=> Es6
+const add = (a,b) => { return a+b }
+
+add(1,2)
+
+**** Only first component will render
+    Rest all will be nested
