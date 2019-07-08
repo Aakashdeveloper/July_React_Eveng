@@ -142,3 +142,19 @@ add(1,2)
 
 **** Only first component will render
     Rest all will be nested
+
+/*********************************
+   Targeting in Css
+**********************************/
+TagName
+Class (.)
+id(#)
+
+/*********************************
+   Way  of adding CSS
+**********************************/
+Inline => inside Js File
+External Css => In public folder
+Specific to component
+
+inline > header.css > style.css
