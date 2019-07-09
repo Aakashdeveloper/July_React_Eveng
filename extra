@@ -158,3 +158,30 @@ External Css => In public folder
 Specific to component
 
 inline > header.css > style.css
+
+/*********************************
+        State And Props
+**********************************/
+
+=> State act like a local variable
+=> Props is the helping us to transfer state of
+    one componet to another
+
+Component A            Component B
+             props
+State A -------------------->State B
+***************************************
+=> In state we can assign the data  
+=> In props we can only recive the data
+******************************************
+=> Data intercation in class component happen
+   through state
+=> Data interaction in functional component
+   happen through props
+
+
+   ternary operator 
+   Filter in javascript 
+   map in javascript 
+   https://www.w3schools.com/jsref/jsref_filter.asp
+    https://www.w3schools.com/jsref/jsref_map.asp
