@@ -1,11 +1,40 @@
 // to require lib module
-import React from 'react'
+import React,{Component} from 'react'
 import ReactDom from 'react-dom';
 
-import Home from './components/Home';
-import Header from './components/Header'
+import Header from './components/Header';
+import JSON from './db.json';
+import NewsList from './components/NewsList';
 
 // Logical and html
+class App extends Component {
+    constructor(props){
+        super(props);
+
+        this.state={
+            news:JSON,
+            title:'ABC'
+        }
+    }
+    render(){
+        return(
+            <div>
+                <Header/>
+                <hr/>
+                <NewsList datalist={this.state.news}/>
+            </div>
+        )
+    }
+}
+
+ReactDom.render(<App/>, document.getElementById('root'))
+
+
+
+// To make it availabe outside
+
+/*
+
 const App = () => {
     return(
         <div>
@@ -19,10 +48,4 @@ const App = () => {
             </div>
         </div>
     )
-}
-
-ReactDom.render(<App/>, document.getElementById('root'))
-
-
-
-// To make it availabe outside
+}*/

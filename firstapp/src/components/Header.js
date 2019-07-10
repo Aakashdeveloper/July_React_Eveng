@@ -7,13 +7,15 @@ class Header extends Component {
         super()
 
         this.state={
-            title:'React App'
+            title:'React App',
+            userInput:'User text Here'
         }
         
     }
 
     inputChange(event){
         console.log(event.target.value)
+        this.setState({userInput:event.target.value?event.target.value:'User text Here'})
     }
 
     render(){
@@ -23,12 +25,12 @@ class Header extends Component {
                 onClick={()=>{console.log('header clicked')}}>
 
                 {this.state.title}
-                
+
                 </div>
                 <center>
-                    <input onChange={this.inputChange}/>
+                    <input onChange={this.inputChange.bind(this)}/>
                 </center>
-                <p>User text Here</p>
+                <p>{this.state.userInput}</p>
             </header>
         )
     }
