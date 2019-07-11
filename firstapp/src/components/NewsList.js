@@ -1,11 +1,11 @@
 import React from 'react';
 
 const NewsList = (props) => {
-    console.log("form news list>>>>",props)
+   
 
     const output= props.datalist.map((item)=>{
         return(
-            <div>
+            <div key={item.id}>
                 <h3>{item.title}</h3>
                 <div>
                     {item.feed}

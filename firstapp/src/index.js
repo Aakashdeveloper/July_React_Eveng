@@ -13,15 +13,24 @@ class App extends Component {
 
         this.state={
             news:JSON,
-            title:'ABC'
+            filtered:JSON
         }
     }
+    filterNews(keyword){
+        const output = this.state.news.filter((data)=>{
+            return data.title.indexOf(keyword)> -1;
+        })
+
+        this.setState({filtered:output})
+    }
+
+
     render(){
         return(
             <div>
-                <Header/>
+                <Header newsSearch={(userText)=>{this.filterNews(userText)}}/>
                 <hr/>
-                <NewsList datalist={this.state.news}/>
+                <NewsList datalist={this.state.filtered}/>
             </div>
         )
     }
