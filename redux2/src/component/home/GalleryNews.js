@@ -16,7 +16,7 @@ const showGallery = ({galData})=>{
             <Slider {...settings}>
                 {galData.map((item) => {
                     return(
-                        <Link to="/" key={item.id}
+                        <Link to={`/gallery/${item.id}`} key={item.id}
                             className="slider-item">
                             <div className="image"
                             style={{background:`url(/images/galleries/${item.images[0].img})`}}>
