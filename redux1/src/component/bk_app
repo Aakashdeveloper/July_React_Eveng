@@ -1,0 +1,37 @@
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
+
+class App extends Component {
+
+    componentWillMount(){
+        this.props.MoviesList();
+    }
+    renderMovies = (mydata) => {
+        if(mydata){
+            return mydata.map((data) => {
+                return(
+                    <div>{data.name}</div>
+                )
+            })
+        }
+        
+    }
+
+    render(){
+        return(
+            <div>
+                <h1>React Redux</h1>
+                {this.renderMovies(this.props.mydata)}
+            </div>
+        )
+    }
+}
+
+function mapStateToProps(state){
+    return{
+        mydata:state.movies
+    }
+}
+
+export default connect(mapStateToProps,actions)(App);
