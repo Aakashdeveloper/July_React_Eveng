@@ -83,6 +83,34 @@
         12,
         9
       ]
+    },
+    {
+      "id": 8,
+      "title": "John",
+      "body": "Stephen",
+      "category": "shows",
+      "img": "7.jpg",
+      "date": "21/21/1944",
+      "author": "Meredith Cash",
+      "views": 237,
+      "likes": [
+        12,
+        9
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Aakash",
+      "body": "Handa",
+      "category": "shows",
+      "img": "7.jpg",
+      "date": "21/21/1944",
+      "author": "Meredith Cash",
+      "views": 237,
+      "likes": [
+        12,
+        9
+      ]
     }
   ],
   "galleries": [

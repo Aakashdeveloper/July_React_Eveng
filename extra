@@ -192,3 +192,19 @@ Step for dummy api
 ****************/
 npm i -g json-server
 json-server --watch db.json --port 8900
+
+
+docker build . -t jugal/reactapp
+docker run -p 6700:3000 jugal/reactapp 
+
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testjugalgit.git
+git push -u origin master
+
+
+git add .
+git commit -m "first commit"
+git push
